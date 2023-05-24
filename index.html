@@ -7,6 +7,211 @@
   <title>WISHLIST</title>
 </head>
 <body>
+
+  <header class="header">
+    <div class="container">
+      <img src="./img/logo.svg" alt="Логотип сервиса WishList в виде буквы W" class="header__logo">
+    
+      <nav class="header__nav nav">
+        <button class="nav__btn btn">Зарегистрироваться</button>
+        <button class="nav__btn btn">Войти</button>
+      </nav>
+    </div>
+
+    <button class="header__burger burger">
+      <span class="burger__line"></span>
+    </button>
+    <!-- /.container -->
+  </header>
+  <!-- /.header -->
+
+  <main class="app">
+    <section class="hero">
+      <div class="container">
+        <h1 class="hero__title">Wishlist</h1>
   
+        <p class="hero__description">Никогда не&nbsp;поздно поставить новую цель или обрести новую мечту...</p>
+      
+        <ol class="hero__steps steps">
+          <li class="steps__item">Создайте список желаний</li>
+          <li class="steps__item">Поделитесь ссылкой с&nbsp;друзьями</li>
+          <li class="steps__item">Получите желанный подарок</li>
+        </ol>
+      </div>
+      <!-- /.container -->
+    </section>
+    <!-- /.hero -->
+
+    <section class="wishlist">
+      <div class="container">
+        <div class="wishlist__profile profile">
+          <img src="./img/avatar.png" alt="Фото Иван Петров" class="profile__avatar">
+
+          <div class="profile__content">
+            <h2 class="profile__fullname">Иван Петров</h2>
+
+            <p class="profile__birthday">15 июля исполнится 55 лет</p>
+
+            <button class="profile__edit">
+              <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M0.75 29.25H6.6875L24.1992 11.7384L18.2617 5.80086L0.75 23.3125V29.25ZM3.91667 24.6267L18.2617 10.2817L19.7183 11.7384L5.37333 26.0834H3.91667V24.6267ZM25.0858 1.20919C24.9394 1.06241 24.7654 0.94596 24.5738 0.866506C24.3823 0.787052 24.177 0.746155 23.9696 0.746155C23.7622 0.746155 23.5569 0.787052 23.3653 0.866506C23.1738 0.94596 22.9998 1.06241 22.8533 1.20919L19.9558 4.10669L25.8933 10.0442L28.7908 7.14669C28.9376 7.00021 29.0541 6.82622 29.1335 6.63468C29.213 6.44314 29.2539 6.23781 29.2539 6.03044C29.2539 5.82307 29.213 5.61774 29.1335 5.4262C29.0541 5.23466 28.9376 5.06067 28.7908 4.91419L25.0858 1.20919Z" fill="white"/>
+              </svg>                
+              редактировать профиль
+            </button>
+          </div>
+        </div>
+
+        <div class="wishlist__description">Это мой список желаний если вы&nbsp;мне хотите что-то подарить, то&nbsp;прошу выбирайте из&nbsp;списка ниже или карту Ozon. Лучше нарушить эффект внезапности, чем подарить что-то ненужное или&nbsp;то, что у&nbsp;меня уже есть.</div>
+        
+        <ul class="wishlist__categories categories">
+          <li class="categories__item">
+            <h3 class="categories__title">Гаджеты</h3>
+
+            <ul class="wishlist__items">
+              <li class="item">
+                <img src="./img/buds.png" alt="Xiaomi Redmi Buds 4 Pro " class="item__image">
+                <h4 class="item__title">Xiaomi Redmi Buds 4 Pro </h4>
+                <p class="item__price">5800 руб.</p>
+                <button class="item__btn btn btn_castling"></button>
+              </li>
+            </ul>
+
+            <ul class="wishlist__items">
+              <li class="item">
+                <img src="./img/buds.png" alt="Xiaomi Redmi Buds 4 Pro " class="item__image">
+                <h4 class="item__title">Xiaomi Redmi Buds 4 Pro </h4>
+                <p class="item__price">5800 руб.</p>
+                <button class="item__btn btn btn_castling"></button>
+              </li>
+            </ul>
+
+            <ul class="wishlist__items">
+              <li class="item">
+                <img src="./img/buds.png" alt="Xiaomi Redmi Buds 4 Pro " class="item__image">
+                <h4 class="item__title">Xiaomi Redmi Buds 4 Pro </h4>
+                <p class="item__price">5800 руб.</p>
+                <button class="item__btn btn btn_castling"></button>
+              </li>
+            </ul>
+
+          </li>
+          <li class="categories__item"></li>
+        </ul>
+      </div>
+      <!-- /.container -->
+    </section>
+    <!-- /.wishlist -->
+
+    <section class="edit edit_profile">
+      <div class="container">
+        <form class="edit__form">
+          <fieldset class="edit__avatar">
+            <img src="./img/avatar.png" alt="ФИО пользователя" class="edit__avatar-image">
+
+            <div class="edit__avatar-load">
+              <label for="avatar-load" class="edit__label-avatar">
+                <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M0.75 29.25H6.6875L24.1992 11.7384L18.2617 5.80086L0.75 23.3125V29.25ZM3.91667 24.6267L18.2617 10.2817L19.7183 11.7384L5.37333 26.0834H3.91667V24.6267ZM25.0858 1.20919C24.9394 1.06241 24.7654 0.94596 24.5738 0.866506C24.3823 0.787052 24.177 0.746155 23.9696 0.746155C23.7622 0.746155 23.5569 0.787052 23.3653 0.866506C23.1738 0.94596 22.9998 1.06241 22.8533 1.20919L19.9558 4.10669L25.8933 10.0442L28.7908 7.14669C28.9376 7.00021 29.0541 6.82622 29.1335 6.63468C29.213 6.44314 29.2539 6.23781 29.2539 6.03044C29.2539 5.82307 29.213 5.61774 29.1335 5.4262C29.0541 5.23466 28.9376 5.06067 28.7908 4.91419L25.0858 1.20919Z" fill="white"/>
+                </svg>
+                Обновить фотографию
+              </label>
+              <input type="file" class="edit__input-file edit__input-file_avatar" accept="image/jpeg, image/png">
+              
+              <button class="edit__avatar-delete">
+                <svg width="23" height="29" viewBox="0 0 23 29" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M2.48842 25.6389C2.48842 27.35 3.90271 28.75 5.63128 28.75H18.2027C19.9313 28.75 21.3456 27.35 21.3456 25.6389V6.97222H2.48842V25.6389ZM5.63128 10.0833H18.2027V25.6389H5.63128V10.0833ZM17.417 2.30556L15.8456 0.75H7.98842L6.41699 2.30556H0.916992V5.41667H22.917V2.30556H17.417Z" fill="white"/>
+                </svg>
+                Удалить
+              </button>
+            </div>
+          </fieldset>
+
+          <fieldset class="edit__name">
+            <label for="" class="edit__label">
+              <span class="edit__label-text">Имя:</span>
+              <input type="text" class="edit__input" name="name">
+            </label>
+
+            <label for="" class="edit__label">
+              <span class="edit__label-text">Фамилия:</span>
+              <input type="text" class="edit__input" name="surname">
+            </label>
+          </fieldset>
+
+          <fieldset class="edit__birthday">
+            <legend class="edit__label">Дата рождения:</legend>
+
+            <label for="" class="edit__label">
+              <select type="text" class="edit__input" name="day"></select>
+            </label>
+
+            <label for="" class="edit__label">
+              <select type="text" class="edit__input" name="month"></select>
+            </label>
+
+            <label for="" class="edit__label">
+              <select type="text" class="edit__input" name="year"></select>
+            </label>
+          </fieldset>
+
+          <fieldset class="edit__description">
+            <label class="edit__label-text" for="description">Вступительный текст:</label>
+            <textarea type="text" class="edit__description-input" name="description"></textarea>
+          </fieldset>
+
+          <button class="edit__submit-btn">Сохранить изменения</button>
+        </form>
+        <!-- /.edit__form -->
+      </div>
+      <!-- /.container -->
+    </section>
+    <!-- /.edit edit__profile -->
+
+    <section class="edit edit_wish">
+      <div class="container">
+        <form class="edit__form">
+          <fieldset class="edit__wish">
+            <label for="" class="edit__label">
+              <span class="edit__label-text">Описание:</span>
+              <input type="text" class="edit__input" name="title">
+            </label>
+
+            <label for="" class="edit__label">
+              <span class="edit__label-text">Категория:</span>
+              <input type="text" class="edit__input" name="category">
+            </label>
+
+            <div class="edit__wish-price">
+              <label for="" class="edit__label">
+                <span class="edit__label-text">Цена:</span>
+                <input type="text" class="edit__input" name="price">
+              </label>
+              <label class="edit__label-select">
+                <select name="currency" id="" class="edit__select edit__select-currency"></select>
+              </label>
+            </div>
+
+            <label for="" class="edit__label">
+              <span class="edit__label-text">Ссылка:</span>
+              <input type="text" class="edit__input" name="link">
+            </label>
+          </fieldset>
+
+          <fieldset class="edit__wish-photo">
+            <label class="edit__label-photo">
+              <img src="./img/no-photo.jpg" alt="" class="edit__wish-image">
+            </label>
+          </fieldset>
+
+          <button class="edit__submit-btn btn">Сохранить изменения</button>
+          <button class="edit__delete-btn btn">Удалить желание</button>
+        </form>
+      </div>
+      <!-- /.container -->
+    </section>
+    <!-- /.edit edit_wish -->
+  </main>
+  <!-- /.app -->
+
 </body>
 </html>
