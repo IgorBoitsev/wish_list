@@ -67,9 +67,46 @@ fieldset {
   line-height: 40px;
   text-transform: capitalize;
 }
+.btn_castling {
+  background: #365ABA;
+  color: #ffffff;
+}
 .wishlist {
   display: none;
 }
-.edit {
+.hero {
   display: none;
+}
+.edit-wish {
+  /* display: none; */
+}
+.edit-profile {
+  display: none;
+}
+
+@media (max-width: 1920px) {
+  .container {
+    max-width: 1024px;
+    padding: 0 22px;
+    margin: 0 auto;
+  }
+  .btn {
+    font-size: 24px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .container {
+    max-width: 768px;
+    padding: 0 34px;
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    min-width: 320px;
+    padding: 0 32px;
+    margin: 0 auto;
+  }
 }

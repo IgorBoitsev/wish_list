@@ -17,3 +17,23 @@
   font-size: 92px;
   margin-right: 16px;
 }
+
+@media (max-width: 1024px) {
+  .steps__item {
+    flex-basis: 144px;
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 768px) {
+  .steps {
+    flex-direction: column;
+    gap: 10px;
+  }
+  .steps__item {
+    flex-basis: content;
+  }
+  .steps__item::before {
+    font-size: 40px;
+  }
+}
