@@ -71,18 +71,6 @@ fieldset {
   background: #365ABA;
   color: #ffffff;
 }
-.wishlist {
-  display: none;
-}
-.hero {
-  display: none;
-}
-.edit-wish {
-  /* display: none; */
-}
-.edit-profile {
-  display: none;
-}
 
 @media (max-width: 1920px) {
   .container {
