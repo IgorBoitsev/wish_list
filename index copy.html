@@ -18,8 +18,8 @@
         <button class="nav__btn btn">Войти</button>
       </nav>
 
-      <button class="header__burger burger" data-close="/img/close_btn.svg">
-        <!-- <span class="burger__line"></span> -->
+      <button class="header__burger burger">
+        <span class="burger__line"></span>
       </button>
     </div>
 
@@ -30,7 +30,7 @@
   <main class="app">
     <section class="hero">
       <div class="container hero__container">
-        <h1 class="hero__title">Wishlist</h1>
+        <h1 class="hero__title"><span>Wish</span><span>list</span></h1>
   
         <p class="hero__description">Никогда не&nbsp;поздно поставить новую цель или обрести новую мечту...</p>
       
@@ -245,8 +245,10 @@
             </button>
           </fieldset>
 
-          <button class="edit__submit-btn btn">Сохранить изменения</button>
-          <button class="edit__delete-btn btn">Удалить желание</button>
+          <div class="edit__submit-wrapper">
+            <button class="edit__submit-btn btn">Сохранить изменения</button>
+            <button class="edit__delete-btn btn">Удалить желание</button>
+          </div>
         </form>
       </div>
       <!-- /.container -->
