@@ -22,19 +22,8 @@
   margin-bottom: 135px;
   max-width: 940px;
 }
-/* .hero__steps {
-} */
 
-/* @media (max-width: 1920px) {
-  .hero__title {
-    font-size: 150px;
-  }
-  .hero__description {
-    font-size: 36px;
-    margin-bottom: 32px;
-    max-width: 770px;
-  }
-} */
+/* ------ MEDIA ------ */
 
 @media (max-width: 1700px) {
   .hero__title {
@@ -47,17 +36,6 @@
     max-width: 860px;
   }
 }
-
-/* @media (max-width: 1024px) {
-  .hero__title {
-    font-size: 118px;
-  }
-  .hero__description {
-    font-size: 26px;
-    margin-bottom: 100px;
-    max-width: 590px;
-  }
-} */
 
 @media (max-width: 1200px) {
   .hero {
@@ -96,6 +74,5 @@
   .hero__description {
     font-size: 18px;
     margin-bottom: 54px;
-    /* max-width: 590px; */
   }
 }

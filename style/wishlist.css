@@ -14,47 +14,13 @@
   gap: 50px 40px;
 }
 
-/* @media (max-width: 1920px) {
-  .wishlist__profile {
-    margin-bottom: 56px;
-  }
-  .wishlist__description {
-    font-size: 32px;
-    margin-bottom: 84px;
-  }
-  .wishlist__items {
-    grid-template-columns: repeat(2, 1fr);
-    gap: 30px 20px;
-  }
-} */
+/* ------ MEDIA ------ */
 
 @media (max-width: 1700px) {
-  /* .wishlist__profile {
-    margin-bottom: 56px;
-  }
-  .wishlist__description {
-    font-size: 32px;
-    margin-bottom: 84px;
-  } */
   .wishlist__items {
-    /* grid-template-columns: repeat(2, 1fr); */
     gap: 40px 20px;
   }
 }
-
-/* @media (max-width: 1024px) {
-  .wishlist__profile {
-    margin-bottom: 64px;
-  }
-  .wishlist__description {
-    margin-bottom: 78px;
-  }
-  .wishlist__items {
-    grid-template-columns: repeat(1, 1fr);
-    justify-items: center;
-    gap: 34px;
-  }
-} */
 
 @media (max-width: 992px) {
   .wishlist {
@@ -74,11 +40,22 @@
   }
   .wishlist__items {
     grid-template-columns: 1fr;
-    /* justify-items: center; */
     gap: 34px;
   }
 }
 
 @media (max-width: 740px) {
-  
+  .wishlist {
+    padding-top: 16px;
+    padding-bottom: 46px;
+  }
+  .wishlist__profile {
+    margin-bottom: 42px;
+  }
+  .wishlist__description {
+    margin-bottom: 42px;
+  }
+  .wishlist__items {
+    gap: 20px;
+  }
 }
