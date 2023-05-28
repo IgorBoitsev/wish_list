@@ -27,3 +27,13 @@
     margin-bottom: 30px;
   }
 }
+
+@media (max-width: 740px) {
+  .categories__item {
+    margin-bottom: 42px;
+  }
+  .categories__title {
+    margin-bottom: 22px;
+    font-size: 32px;
+  }
+}

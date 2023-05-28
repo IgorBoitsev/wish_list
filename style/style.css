@@ -75,13 +75,10 @@ fieldset {
 .hero {
   display: none;
 }
-/* .edit-profile {
-  display: none;
-} */
-.wishlist {
+.edit-profile {
   display: none;
 }
-.edit-wish {
+.wishlist {
   display: none;
 }
 
