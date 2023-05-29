@@ -1,19 +1,59 @@
 import { createElement } from "./helper.js";
+import { createBurgerMenu } from "./createBurgerMenu.js";
+import { API_URL, JWT_TOKEN_KEY } from "./const.js";
+import { renderModal } from "./renderModal.js";
+import { auth, router } from "./index.js";
 
 const nav = document.querySelector('.nav');
+const headerContainer = document.querySelector('.header__container');
 
-// const burger = createBurgerMenu(nav);
+const burger = createBurgerMenu(nav, 'nav-active', '.nav__btn');
 
 export const renderNavigation = () => {
   nav.textContent = '';
 
-  const buttonSign = createElement('button', {
+  const buttonSignUp = createElement('button', {
     className: 'nav__btn btn',
     textContent: 'Зарегистрироваться'
   });
 
-  buttonSign.addEventListener('click', () => {
+  buttonSignUp.addEventListener('click', () => {
+    renderModal({
+      title: 'Регистрация',
+      description: 'Введите ваши данные',
+      btnSubmit: 'Зарегистрироваться',
+      async submitHandler(e) {
+        const formData = new FormData(e.target);
+        const credentials = {
+          login: formData.get('login'),
+          password: formData.get('password')
+        };
 
+        try {
+          const response = await fetch(`${API_URL}/register`, {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json'},
+            body: JSON.stringify(credentials)
+          });
+
+          if (response.ok) {
+            const data = await response.json();
+            console.log('data: ', data);
+            localStorage.setItem(JWT_TOKEN_KEY, data.token);
+            auth.login = data.login;
+            router.setRoute(`/user/${data.login}`);
+
+            return true;
+          } else {
+            const {message = 'Неизвестная ошибка'} = await response.json();
+            console.log(message);
+            throw new Error(message);
+          }
+        } catch (error) {
+          alert(error.message);
+        }
+      }
+    });
   });
 
   const buttonLogin = createElement('button', {
@@ -25,7 +65,6 @@ export const renderNavigation = () => {
     
   });
 
-  nav.append(buttonSign, buttonLogin);
-
+  nav.append(buttonSignUp, buttonLogin);
+  headerContainer.append(burger);
 }
-

@@ -72,13 +72,16 @@ fieldset {
   color: #ffffff;
 }
 
-.hero {
+/* .hero {
   display: none;
-}
+} */
 .edit-profile {
   display: none;
 }
 .wishlist {
+  display: none;
+}
+.edit-wish {
   display: none;
 }
 
